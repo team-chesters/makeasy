@@ -1,0 +1,35 @@
+{
+  "name": "straightforward",
+  "version": "1.0.0",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/straightforward.umd.js",
+  "module": "./dist/straightforward.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/straightforward.es.js",
+      "require": "./dist/straightforward.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "lint": "eslint ./src/**/*.js"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "vite": "^5.0.10"
+  }
+}
