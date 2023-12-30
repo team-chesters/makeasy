@@ -5,6 +5,12 @@ Javascript Library for More Easier Frontend Development. (exported as a [UMD](ht
 Straightforward is very inspired by [lodash](https://github.com/lodash/lodash) and my work experience.
 
 
+## Build
+In Terminal:
+```shell
+$ yarn run build
+```
+
 
 ## Installation
 
