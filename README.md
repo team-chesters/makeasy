@@ -26,12 +26,12 @@ In HTML:
 
 Using Javascript UMD:
 ```js
-var stf = require('makeasy');
+var makeasy = require('makeasy');
 ```
 
 Using Javascript ES:
 ```js
-import stf from 'makeasy';
+import makeasy from 'makeasy';
 ```
 
 
