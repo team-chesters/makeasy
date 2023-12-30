@@ -14,10 +14,13 @@ $ yarn run build
 
 ## Installation
 
+<!--
+# CDN build work is in progress. The CDN build feature will be removed from Vite 6. I am looking for another way.
 In HTML:
 ```html
 <script src="straightforward.js"></script>
 ```
+-->
 
 Using Javascript UMD:
 ```js
