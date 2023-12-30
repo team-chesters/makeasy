@@ -2,7 +2,8 @@
 
 Javascript Library for More Easier Frontend Development. (exported as a [UMD](https://github.com/umdjs/umd) module)
 
-Straightforward is heavily inspired by [lodash](https://github.com/lodash/lodash).
+Straightforward is very inspired by [lodash](https://github.com/lodash/lodash) and my work experience.
+
 
 
 ## Installation
