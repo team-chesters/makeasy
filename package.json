@@ -1,5 +1,5 @@
 {
-  "name": "straightforward",
+  "name": "makeasy.js",
   "description": "Javascript Library for More Easier Frontend Development.",
   "version": "1.0.0",
   "license": "MIT",
@@ -8,13 +8,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://www.github.com/che5ya/straightforward.git"
+    "url": "https://www.github.com/che5ya/makeasy.git"
   },
   "bugs": {
-    "url": "https://www.github.com/che5ya/straightforward/issues",
+    "url": "https://www.github.com/che5ya/makeasy/issues",
     "email": "che5ya@naver.com"
   },
-  "homepage": "https://www.github.com/che5ya/straightforward",
+  "homepage": "https://www.github.com/che5ya/makeasy",
   "keywords": [
     "javascript",
     "functions",
@@ -22,12 +22,12 @@
     "util",
     "utility"
   ],
-  "main": "./dist/straightforward.umd.js",
-  "module": "./dist/straightforward.es.js",
+  "main": "./dist/makeasy.umd.js",
+  "module": "./dist/makeasy.es.js",
   "exports": {
     ".": {
-      "import": "./dist/straightforward.es.js",
-      "require": "./dist/straightforward.umd.js"
+      "import": "./dist/makeasy.es.js",
+      "require": "./dist/makeasy.umd.js"
     }
   },
   "scripts": {

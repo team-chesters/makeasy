@@ -5,8 +5,8 @@ module.exports = defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, './index.js'),
-      name: 'straightforward',
-      fileName: (format) => `straightforward.${format}.js`
+      name: 'makeasy',
+      fileName: (format) => `makeasy.${format}.js`
     }
   }
 });

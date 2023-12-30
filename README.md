@@ -1,8 +1,10 @@
-# Straightforward
+# Makeasy.js
 
 Javascript Library for More Easier Frontend Development. (exported as a [UMD](https://github.com/umdjs/umd) module)
 
-Straightforward is very inspired by [lodash](https://github.com/lodash/lodash) and my work experience.
+Makeasy is very inspired by [lodash](https://github.com/lodash/lodash) and my work experience.
+
+Makeasy is pronounced [mek-ˈiːzi].
 
 
 ## Build
@@ -18,24 +20,24 @@ $ yarn run build
 # CDN build work is in progress. The CDN build feature will be removed from Vite 6. I am looking for another way.
 In HTML:
 ```html
-<script src="straightforward.js"></script>
+<script src="makeasy.js"></script>
 ```
 -->
 
 Using Javascript UMD:
 ```js
-var stf = require('straightforward');
+var stf = require('makeasy');
 ```
 
 Using Javascript ES:
 ```js
-import stf from 'straightforward';
+import stf from 'makeasy';
 ```
 
 
-## Why Straightforward?
+## Why Makeasy?
 
-Straightforward simplifies front-end web development by streamlining operations involving arrays, numbers, objects, strings, and more.
+Makeasy simplifies front-end web development by streamlining operations involving arrays, numbers, objects, strings, and more.
 
 
 ## License
