@@ -5,7 +5,7 @@ const empty_value = '';
 const short_value = 'Lorem';
 const string_value = 'Lorem ipsum dolor sit amet';
 
-test('Test function "hasKey"', () => {
+test('Test function "Cut"', () => {
     expect(Cut(empty_value, 3)).toEqual(empty_value);
     expect(Cut(null_value, 8)).toBe(undefined);
     expect(Cut(short_value, 8)).toBe(short_value);
