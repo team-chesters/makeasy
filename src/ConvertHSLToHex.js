@@ -1,4 +1,21 @@
+import isEmpty from './isEmpty';
+import isNumberNegative from './isIntegerNegative';
+
+/**
+ * Converts an HSL (Hue, Saturation, Lightness) color value to its corresponding Hexadecimal representation.
+ * 
+ * @param {number} hue - The hue value (0-360).
+ * @param {number} saturation - The saturation value (0-100).
+ * @param {number} lightness - The lightness value (0-100).
+ * @returns {string} Returns the Hexadecimal representation of the HSL color.
+ * @example
+ */
+
 export default function ConvertHSLToHex(hue, saturation, lightness) {
+    if (isEmpty(hue)) return 'Empty Hue';
+    if (isEmpty(saturation)) return 'Empty Saturation';
+    if (isEmpty(lightness)) return 'Empty Lightness';
+
     hue /= 360;
     saturation /= 100;
     lightness /= 100;
@@ -25,9 +42,21 @@ export default function ConvertHSLToHex(hue, saturation, lightness) {
         blue = calculateRGB(p, q, hue - 1 / 3);
     }
 
+    if (
+        isNaN(red) ||
+        isNaN(green) ||
+        isNaN(blue) ||
+        isNumberNegative(red) ||
+        isNumberNegative(green) ||
+        isNumberNegative(blue)
+    ) {
+        return 'Invalid Parameter';
+    }
+    
+
     const toHex = (x) => {
         const hex = Math.round(x * 255).toString(16);
-        return hex.length === 1 ? "0" + hex : hex;
+        return hex.length === 1 ? '0' + hex : hex;
     };
 
     return `#${toHex(red)}${toHex(green)}${toHex(blue)}`;
