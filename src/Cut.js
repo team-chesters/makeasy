@@ -8,10 +8,6 @@
  * @param {string} The value to convert.
  * @param {number} The number of lengths to cut.
  * @returns {string} Returns the truncated string.
- * @example
- *
- * at(object, ['a[0].b.c', 'a[1]'])
- * // => 'Lorem'
  */
 
 export default function Cut(str, len) {
