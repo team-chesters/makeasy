@@ -1,4 +1,16 @@
+import isEmpty from "./isEmpty";
+/**
+ * Generates an array of dates between the given start and end dates (inclusive).
+ * 
+ * @param {Date | string} s - The start date.
+ * @param {Date | string} e - The end date.
+ * @returns {Array<Date>} Returns an array containing dates between the start and end dates (inclusive).
+ */
+
 export default function GetDatesBetween(s, e) {
+    if (isEmpty(s) && isEmpty(e)) return 'All parameters are empty';
+    if (isEmpty(s) || isEmpty(e)) return 'Some of range parameter are empty';
+
     let ret = [];
     let ss = new Date(s);
     ss.setHours(0, 0, 0, 0);
