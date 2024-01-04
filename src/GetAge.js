@@ -1,3 +1,12 @@
+import ymdToDate from "./ymdToDate";
+
+/**
+ * Calculates the age based on the provided date of birth in the format yyyymmdd.
+ * 
+ * @param {string | number} yyyymmdd - The date of birth in the format yyyymmdd.
+ * @returns {number} Returns the calculated age.
+ */
+
 export default function GetAge(yyyymmdd) {
     if (yyyymmdd == null || yyyymmdd == undefined)
         return 0;
