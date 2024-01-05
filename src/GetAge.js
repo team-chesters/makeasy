@@ -1,34 +1,34 @@
 import ymdToDate from "./ymdToDate";
 
 /**
- * Calculates the age based on the provided date of birth in the format yyyymmdd.
+ * Calculates the age based on the provided date of birth in the format yyyyMMdd.
  * 
- * @param {string | number} yyyymmdd - The date of birth in the format yyyymmdd.
+ * @param {string | number} yyyyMMdd - The date of birth in the format yyyyMMdd.
  * @returns {number} Returns the calculated age.
  */
 
-export default function GetAge(yyyymmdd) {
-    if (yyyymmdd == null || yyyymmdd == undefined)
+export default function GetAge(yyyyMMdd) {
+    if (yyyyMMdd == null || yyyyMMdd == undefined)
         return 0;
 
-    yyyymmdd = "" + yyyymmdd;
+    yyyyMMdd = "" + yyyyMMdd;
 
-    if (yyyymmdd.length != 6 && yyyymmdd.length != 8) return 0;
+    if (yyyyMMdd.length != 6 && yyyyMMdd.length != 8) return 0;
 
-    if (yyyymmdd.length == 6) {
+    if (yyyyMMdd.length == 6) {
         // yymmdd
 
-        let smallYear = parseInt(yyyymmdd.substring(0,2), 10);
+        let smallYear = parseInt(yyyyMMdd.substring(0,2), 10);
         let todayYear = new Date().getFullYear() % 100;
         if (smallYear > todayYear) {
-            yyyymmdd = "19" + yyyymmdd;
+            yyyyMMdd = "19" + yyyyMMdd;
         } else {
-            yyyymmdd = "20" + yyyymmdd;
+            yyyyMMdd = "20" + yyyyMMdd;
         }
     }
 
     const today = new Date();
-    const birthDate = ymdToDate(yyyymmdd, "12:00");
+    const birthDate = ymdToDate(yyyyMMdd, "12:00");
 
     let age = today.getFullYear() - birthDate.getFullYear();
     const m = today.getMonth() - birthDate.getMonth();

@@ -1,4 +1,4 @@
-import Len from './Len';
+import Len from '../src/Len';
 
 /**
  * Converts a date string in integer format to a formatted date string (YYYY-MM-DD).

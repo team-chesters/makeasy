@@ -1,4 +1,4 @@
-import getNakedTelephone from "./GetNakedTelephone";
+import getNakedTelephone from "../locale.ko-KR/GetNakedTelephone";
 
 export default function isTelephone(phone) {
     let nakedTel = getNakedTelephone(phone);

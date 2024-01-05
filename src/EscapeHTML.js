@@ -1,3 +1,4 @@
+import { _HTML_ENTITY_MAP } from "./const";
 /**
  * Escapes special characters in a string to their respective HTML entities.
  * 
@@ -6,16 +7,7 @@
  */
 
 export default function EscapeHTML(string) {
-    const entityMap = {
-        "&": "&amp;",
-        "<": "&lt;",
-        ">": "&gt;",
-        '"': "&quot;",
-        "'": "&#39;",
-        "/": "/",
-        "`": "&#x60;",
-        "=": "&#x3D;",
-    };
+    const entityMap = _HTML_ENTITY_MAP;
 
     return String(string).replace(/[&<>"'`=]/g, function (s) {
         if (s === '/') {

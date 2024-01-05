@@ -12,10 +12,6 @@ import LenByte from "./LenByte";
  * @param {string} The value to convert.
  * @param {number} The number of lengths to cut.
  * @returns {string} Returns the truncated string.
- * @example
- *
- * CutW('Lorem ipsum dolor sit amet', 5)
- * // => 'Lorem...'
  */
 
 export default function CutW(str, len) {

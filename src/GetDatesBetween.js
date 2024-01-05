@@ -1,4 +1,5 @@
 import isEmpty from "./isEmpty";
+
 /**
  * Generates an array of dates between the given start and end dates (inclusive).
  * 

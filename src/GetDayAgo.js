@@ -1,4 +1,5 @@
 import isEmpty from "./isEmpty";
+
 /**
  * Calculates the date that was a specified number of days ago from a given date.
  * If no date is provided, the current date is used.
