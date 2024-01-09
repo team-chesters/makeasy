@@ -1,5 +1,5 @@
 import GetLastSunday from './GetLastSunday';
-import GetTommorrow from './GetTommorrow';
+import GetTommorrow from './GetTomorrow';
 
 export default function GetPrevWeek(t_date = new Date()) {
     let sunday = GetLastSunday(t_date);

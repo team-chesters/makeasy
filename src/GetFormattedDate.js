@@ -1,6 +1,13 @@
 import isEmpty from "./isEmpty";
 import ymdToDate from "./ymdToDate";
 
+/**
+ * Returns a formatted date string from a given 'yyyymmdd' format date string.
+ * 
+ * @param {string} yyyymmdd - The date string in 'yyyymmdd' format.
+ * @returns {string} Returns the formatted date string.
+ */
+
 const getUserLocale = () => navigator.language || navigator.userLanguage;
 const formatDate = (date, locale) => {
     return date.toLocaleDateString(locale,
