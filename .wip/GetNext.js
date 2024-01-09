@@ -1,4 +1,4 @@
-import isEmpty from "./isEmpty";
+import isEmpty from "../src/isEmpty";
 
 /**
  * Recursively retrieves the value of the given nested property keys from the provided object.
