@@ -1,4 +1,4 @@
-import GetWeekRange from '../.wip/GetWeekRange';
+import GetWeekRange from './GetWeekRange';
 
 export default function GetThisWeekRange() {
     let today = new Date();

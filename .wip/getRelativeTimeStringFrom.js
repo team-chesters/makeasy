@@ -5,7 +5,7 @@ const magicSwitch = function(isInPast) {
     return isInPast ? Math.floor : Math.ceil;
 }
 
-export default function getRelativeTimeStringFrom(date_ts) {
+export default function GetRelativeTimeStringFrom(date_ts) {
     if (date_ts == 0) return "";
 
     let milliSeconds = new Date() - new Date(date_ts * 1000);
