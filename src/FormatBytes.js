@@ -1,5 +1,5 @@
 import { _BYTE_UNIT } from "./const";
-import isNumberNegative from "./isIntegerNegative";
+import isNumberNegative from "./isNumberNegative";
 
 /**
  * Formats a byte size into a human-readable string representation.

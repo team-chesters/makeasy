@@ -1,5 +1,5 @@
 import isEmpty from './isEmpty';
-import isNumberNegative from './isIntegerNegative';
+import isNumberNegative from './isNumberNegative';
 
 /**
  * Converts an HSL (Hue, Saturation, Lightness) color value to its corresponding Hexadecimal representation.
