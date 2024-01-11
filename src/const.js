@@ -12,11 +12,18 @@ const _HTML_ENTITY_MAP = {
     "=": "&#x3D;",
 };
 
+const _CHAR_RANGE_MAP = {
+    ASCII: 'ascii',
+    UNICODE: 'unicode'
+};
+
 const _BYTE_UNIT = ["Bytes", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
+
 
 export {
     _ONE_DAY_MS,
     _MS_PER_DAY,
     _HTML_ENTITY_MAP,
+    _CHAR_RANGE_MAP,
     _BYTE_UNIT,
 };

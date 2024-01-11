@@ -9,7 +9,9 @@ import ConvertDecimalToHex from "./ConvertDecimalToHex";
  */
 
 export default function GenerateRandomBytes(length = 20) {
-    const byteLength = (length || 40) / 2
+    length = Math.max(Math.floor(length), 1);
+
+    const byteLength = (length % 2 === 0) ? length / 2 : (length + 1) / 2;
     const randomBytes = new Uint8Array(byteLength);
     
     if (window.crypto && window.crypto.getRandomValues) {

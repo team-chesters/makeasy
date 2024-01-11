@@ -1,11 +1,28 @@
+import { getTime } from 'date-fns';
 import isEmpty from './isEmpty';
 import isDate from './isDate';
+import isNumber from './isNumber';
 
-export default function IsInDateRange (in_date, in_start, in_end) {
-    if (isEmpty(in_date)) return false;
+/**
+ * Checks if a date is within the specified date range.
+ * @param {Date|number} in_date - The date to check. It can be a Date object or a UNIX timestamp.
+ * @param {Date} in_start - The start date of the range.
+ * @param {Date} in_end - The end date of the range.
+ * @returns {boolean} True if the input date is within the specified range, false otherwise.
+ */
 
-    let in_date_ts = in_date;
-    if (isDate(in_date)) in_date_ts = in_date.getUnix();
+export default function isInDateRange (in_date, in_start, in_end) {
+    let in_date_ts;
+    
+    if (isEmpty(in_date) || isEmpty(in_start) || isEmpty(in_end)) return false;
 
-    return in_start.getUnix() <= in_date_ts && in_date_ts <= in_end.getUnix();
+    if (isDate(in_date) && !isNumber(in_date)) {
+        in_date_ts = in_date.getTime();
+    }
+    
+    if (!isDate(in_date) && isNumber(in_date)) {
+        in_date_ts = in_date;
+    }
+
+    return in_start.getTime() <= in_date_ts && in_date_ts <= in_end.getTime();
 };

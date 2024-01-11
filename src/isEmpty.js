@@ -1,3 +1,17 @@
+/**
+ * Checks if an object or value is considered empty.
+ * Empty is defined as follows:
+ * - null or undefined
+ * - an empty string ('')
+ * - a number equal to 0
+ * - a boolean equal to false
+ * - an array with no elements
+ * - a missing property in an object (when property names are provided as additional arguments)
+ * @param {object} obj - The object or value to check.
+ * @param {...string} params - Optional property names to check in the object.
+ * @returns {boolean} Returns true if the object or value is empty, otherwise false.
+ */
+
 export default function isEmpty(obj, ...params) {
     if (obj === null || obj === undefined) return true;
 
