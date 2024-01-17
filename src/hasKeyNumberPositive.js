@@ -6,14 +6,13 @@
  * @returns {boolean} True if the key exists in the object and its value is a positive number, false otherwise.
  */
 
-export default function hasKeyPositive(obj, level, ...rest) {
-    if (obj === null) return false;
-    if (obj === undefined) return false;
-    if (rest.length == 0 && Object.prototype.hasOwnProperty.call(obj, level)) {
-        if (obj[level] == null)
-            return false;
+export default function hasKeyNumberPositive(obj, level, ...rest) {
+    const isInObject = obj !== null && obj !== undefined;
 
-        return obj[level] > 0;
+    if (isInObject && rest.length === 0 && Object.prototype.hasOwnProperty.call(obj, level)) {
+        const value = obj[level];
+        return typeof value === 'number' && value > 0;
     }
-    return hasKeyPositive(obj[level], ...rest);
+
+    return isInObject && hasKeyNumberPositive(obj[level], ...rest);
 };
