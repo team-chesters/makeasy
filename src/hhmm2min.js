@@ -1,15 +1,19 @@
 import isEmpty from "./isEmpty";
 
 /**
- * Converts a time string in HH:MM format to minutes.
- * @param {string} t - The time string in HH:MM format to convert to minutes.
+ * Converts a time string in 'hh:mm' format to minutes.
+ * @param {string} timeString - The time string in 'hh:mm' format to convert to minutes.
  * @returns {number} The equivalent number of minutes.
  */
 
-export default function hhmm2min (t) {
-    if (isEmpty(t)) return 0;
-    let tx = t.match(/(\d{2}):{0,1}(\d{2})/i);
-    if (tx == null) return 0;
+function parseHHMM(timeString) {
+     return timeString ? timeString.match(/(\d{2}):{0,1}(\d{2})/i) : null;
+}
 
-    return Number.parseInt(tx[1]) * 60 + Number.parseInt(tx[2]);
-};
+export default function hhmm2min(timeString) {
+    if (isEmpty(timeString)) return 0;
+    const timeComponents = parseHHMM(timeString);
+
+    if (!Array.isArray(timeComponents)) return 0;
+    return Number.parseInt(timeComponents[1]) * 60 + Number.parseInt(timeComponents[2]);
+}
