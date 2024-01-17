@@ -1,3 +1,11 @@
+/**
+ * Converts a date string in "YYYY-MM-DD" format with optional time to a JavaScript Date object.
+ * @param {string} yyyymmdd - The date string in "YYYY-MM-DD" format.
+ * @param {string} hhmm - Optional. The time string in "HH:MM" format. Default is "00:00".
+ * @param {string} ss - Optional. The seconds string in "SS" format. Default is "00".
+ * @returns {Date} Returns a JavaScript Date object representing the converted date and time.
+ */
+
 export default function ymdToDate(yyyymmdd, hhmm = "00:00", ss = "00") {
     yyyymmdd = yyyymmdd + "";
     hhmm = hhmm + "";

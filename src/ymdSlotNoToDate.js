@@ -1,5 +1,13 @@
 import slotNo2hhmm from './slotNo2hhmm';
 
+/**
+ * Converts a date and slot number to a JavaScript Date object.
+ * The input format for the date should be "YYYY-MM-DD", and the slot number should be an integer.
+ * @param {string} yyyymmdd - The date string in "YYYY-MM-DD" format.
+ * @param {number} slotno - The slot number.
+ * @returns {Date} Returns a JavaScript Date object representing the converted date and time.
+ */
+
 export default function ymdSlotNoToDate(yyyymmdd, slotno) {
     yyyymmdd = yyyymmdd + "";
 
