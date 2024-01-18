@@ -18,7 +18,7 @@ Makeasy.js is functional utility library for JavaScript, inspired by [lodash](ht
 * be compatible with other framework or library. (possible should)
 
 ## Makeasy shouldn't be
-* UI Components/
+* UI Components.
 * CSS Selector Engine or simliar code.
 * Template Engine
 * Anything that could be separate libraries.
