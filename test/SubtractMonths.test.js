@@ -5,16 +5,16 @@ describe('SubtractMonths function', () => {
         const today = new Date();
         const threeMonthsAgo = SubtractMonths(3);
 
-        // expect(threeMonthsAgo.getFullYear()).toBe(today.getFullYear()); // FIXME: received last year
-        // expect(threeMonthsAgo.getMonth()).toBe(today.getMonth() - 3);
+        expect(threeMonthsAgo.getFullYear()).toBe(today.getFullYear());
+        expect(threeMonthsAgo.getMonth()).toBe(today.getMonth() - 3);
     });
 
     it('should subtract months from a custom date', () => {
-        const customDate = new Date('2023-01-15');
+        const customDate = new Date('2023-07-15');
         const fourMonthsAgo = SubtractMonths(4, customDate);
 
-        expect(fourMonthsAgo.getFullYear()).toBe(2022);
-        // expect(fourMonthsAgo.getMonth()).toBe(9); // 0-based month (January is 0),  // FIXME: received last month
+        expect(fourMonthsAgo.getFullYear()).toBe(2023);
+        expect(fourMonthsAgo.getMonth()).toBe(2); // 0-based month (January is 0), 
     });
 
     it('should handle subtracting 0 months', () => {
