@@ -12,17 +12,18 @@ import isNumber from './isNumber';
  */
 
 export default function isInDateRange (in_date, in_start, in_end) {
-    let in_date_ts;
-    
     if (isEmpty(in_date) || isEmpty(in_start) || isEmpty(in_end)) return false;
 
-    if (isDate(in_date) && !isNumber(in_date)) {
-        in_date_ts = in_date.getTime();
-    }
-    
-    if (!isDate(in_date) && isNumber(in_date)) {
-        in_date_ts = in_date;
+    let in_date_ms;
+    if (isDate(in_date)) {
+        in_date_ms = in_date.getTime();
+    } else if (isNumber(in_date) && in_date.length === 10) {
+        in_date_ms = in_date * 1000;
+    } else if (isNumber(in_date) && in_date.length === 13) {
+        in_date_ms = in_date;
+    } else {
+        return false; // Invalid date input
     }
 
-    return in_start.getTime() <= in_date_ts && in_date_ts <= in_end.getTime();
+    return in_start.getTime() <= in_date_ms && in_date_ms <= in_end.getTime();
 };
