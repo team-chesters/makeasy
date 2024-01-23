@@ -22,9 +22,8 @@ describe('slotNo2hhmm function', () => {
         expect(slotNo2hhmm(49)).toBe('24:30');
     });
 
-    // FIXME: negative time slot number is not working
-    // it('should handle negative time slot numbers', () => {
-    //     expect(slotNo2hhmm(-1)).toBe('00:00'); // Negative slot number should be treated as 0
-    //     expect(slotNo2hhmm(-5)).toBe('00:00'); // Negative slot number should be treated as 0
-    // });
+    it('should handle negative time slot numbers', () => {
+        expect(slotNo2hhmm(-1)).toBe(null); // Negative slot number should be treated as null
+        expect(slotNo2hhmm(-5)).toBe(null); // Negative slot number should be treated as null
+    });
 });
