@@ -22,20 +22,8 @@ describe('MakePath function', () => {
         expect(url3).toBe('https://example.com/folder/file.txt');
     });
 
-    // FIXME: double slash problem after https://
-    // it('should handle empty parts', () => {
-    //     const url = MakePath(['https://example.com', '', 'folder', '', 'file.txt']);
-    //     expect(url).toBe('https://example.com/folder/file.txt');
-    // });
-
     it('should return the base URL for an empty array', () => {
         const url = MakePath([]);
         expect(url).toBe('');
     });
-
-    // FIXME: received "https://example.com/folder/42//".
-    // it('should handle non-string parts', () => {
-    //     const url = MakePath(['https://example.com', 'folder', 42, null, undefined]);
-    //     expect(url).toBe('https://example.com/folder/42/null/undefined');
-    // });
 });

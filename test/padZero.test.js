@@ -15,10 +15,4 @@ describe('padZero function', () => {
         expect(padZero('abc', 3)).toBe('abc'); // Length equal to original length
         expect(padZero('hello', 5)).toBe('hello'); // Length greater than original length
     });
-
-    // FIXME: expected must be blank string but not working
-    // it('should return an empty string for negative length', () => {
-        // expect(padZero('42', -3)).toBe('');
-        // expect(padZero('hello', -5)).toBe('');
-    // });
 });
