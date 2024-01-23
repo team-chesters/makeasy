@@ -1,5 +1,3 @@
-import isEmpty from "./isEmpty";
-
 /**
  * Checks if the input integer is zero (0).
  * @param {number} int - The integer to check.
@@ -7,9 +5,10 @@ import isEmpty from "./isEmpty";
  */
 
 export default function isZero (int) {
-    if (int === '' || int === null || int === undefined) return null;
     if (typeof int === 'object') return null;
+    if (typeof int === 'string') return null;
     if (Array.isArray(int)) return null;
+    if (int === '' || int === null || int === undefined) return null;
 
     return Math.sign(int) === 0 || Math.sign(int) === -0;
 };

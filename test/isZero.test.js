@@ -14,10 +14,10 @@ describe('isZero function', () => {
 
     it('should return false for non-integer inputs', () => {
         expect(isZero(0.5)).toBe(false); // Floating-point number
-        // expect(isZero('0')).toBe(false); // String '0', FIXME: String '0' return true. It's wrong.
     });
-
+    
     it('should return null for empty inputs', () => {
+        expect(isZero('0')).toBe(null); // String '0'
         expect(isZero(undefined)).toBe(null); // undefined
         expect(isZero([])).toBe(null); // Empty array
         expect(isZero('')).toBe(null); // Empty string
