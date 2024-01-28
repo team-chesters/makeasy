@@ -8,13 +8,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://www.github.com/che5ya/makeasy.git"
+    "url": "https://www.github.com/team-chesters/makeasy.git"
   },
   "bugs": {
-    "url": "https://www.github.com/che5ya/makeasy/issues",
+    "url": "https://www.github.com/team-chesters/makeasy/issues",
     "email": "che5ya@naver.com"
   },
-  "homepage": "https://www.github.com/che5ya/makeasy",
+  "homepage": "https://www.github.com/team-chesters/makeasy",
   "keywords": [
     "javascript",
     "functions",
