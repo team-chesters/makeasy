@@ -1,7 +1,7 @@
 {
   "name": "makeasy.js",
   "description": "Javascript Library for More Easier Frontend Development.",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "files": [
     "dist"
