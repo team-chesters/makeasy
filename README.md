@@ -24,14 +24,32 @@ Makeasy.js is functional utility library for JavaScript, inspired by [lodash](ht
 * Anything that could be separate libraries.
 * Anything that isn't modular libraries.
 
+## Installation
+In a browser:
+```html
+<script src="./makeasy.umd.js"></script>
+```
+
+Using npm or yarn
+```shell
+$ npm install makeasy 
+```
+
+In a Javascript files (ESM)
+```js
+import { ... } from 'makeasy'
+```
+
 ## Documentation
 
-Online documentation will be written on a Github Wiki, but has not been created yet[^1][^2].
+Online documentation will be written on a [Github Wiki](https://github.com/team-chesters/makeasy/wiki)[^1][^2].
+
+~~Documentation is work in progress.~~
 
 
 ## License
 MIT
 
-[^1]: However, you can check the description and usage in each function code in the `src` folder.
+[^1]: You can check the description and usage in each function code in the `src` folder.
 
 [^2]: The test code for each function can be found in the `test`  folder.
