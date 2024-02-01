@@ -1,9 +1,9 @@
 import baseMakeasy from './src/_base/baseMakeasy.js';
 import isArray from './src/array/isArray.js';
-import isObjectLike from './src/object/isObjectLike.js';
+import isObject from './src/object/isObject.js';
 
 function makeasy(value) {
-  if (isObjectLike(value) && !isArray(value)) {
+  if (isObject(value) && !isArray(value)) {
     if (value instanceof MakeasyWrapper) {
       return value;
     }
